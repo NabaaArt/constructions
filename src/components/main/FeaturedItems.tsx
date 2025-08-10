@@ -55,13 +55,13 @@ export default function FeaturedItems() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {featuredProjects.map((project, index) => (
-            <Card
-              key={project.id}
-              className="group shadow-none border-none overflow-hidden hover:shadow-xl transition-all duration-500 hover:-translate-y-2 animate-fade-in-up"
-              style={{ animationDelay: `${index * 0.2}s` }}
-            >
-              <div className="relative overflow-hidden">
-                <img
+              <Card
+                key={project.id}
+                className="group shadow-none  border-none overflow-hidden hover:shadow-xl transition-all duration-500 hover:-translate-y-2 animate-fade-in-up p-0"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="relative overflow-hidden">
+                  <img
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
                   className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
@@ -94,7 +94,7 @@ export default function FeaturedItems() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-gray-600 leading-relaxed mb-4">{project.description}</CardDescription>
-                <div className="flex items-center justify-between text-sm text-gray-500">
+                <div className="flex mb-5 items-center justify-between text-sm text-gray-500">
                   <span>Duration: {project.duration}</span>
                   <span>#{project.id.toString().padStart(3, "0")}</span>
                 </div>
