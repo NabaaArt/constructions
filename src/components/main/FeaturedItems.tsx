@@ -4,6 +4,9 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Star } from "lucide-react"
 import { Link } from "react-router-dom"
+import imgae6 from "@/assets/luxury-estate.jpg"
+import imgae7 from "@/assets/office-building.jpg"
+import imgae8 from "@/assets/residential-home.jpg"
 
 export default function FeaturedItems() {
   const featuredProjects = [
@@ -12,7 +15,7 @@ export default function FeaturedItems() {
       title: "Downtown Office Complex",
       category: "Commercial",
       description: "A modern 15-story office building with sustainable design features and smart building technology.",
-      image: "/images/office-building.jpg",
+      image: imgae7,
       status: "Completed",
       price: "$2.5M",
       duration: "18 months",
@@ -22,7 +25,7 @@ export default function FeaturedItems() {
       title: "Luxury Residential Estate",
       category: "Residential",
       description: "Premium residential development with 50 luxury homes and world-class amenities.",
-      image: "/images/luxury-estate.jpg",
+      image: imgae6,
       status: "In Progress",
       price: "$5.2M",
       duration: "24 months",
@@ -32,7 +35,7 @@ export default function FeaturedItems() {
       title: "Modern Kitchen Renovation",
       category: "Renovation",
       description: "Complete kitchen transformation with high-end appliances and contemporary design.",
-      image: "/images/kitchen-renovation.jpg",
+      image: imgae8,
       status: "Completed",
       price: "$85K",
       duration: "3 months",
@@ -54,7 +57,7 @@ export default function FeaturedItems() {
           {featuredProjects.map((project, index) => (
             <Card
               key={project.id}
-              className="group overflow-hidden hover:shadow-xl transition-all duration-500 hover:-translate-y-2 animate-fade-in-up"
+              className="group shadow-none border-none overflow-hidden hover:shadow-xl transition-all duration-500 hover:-translate-y-2 animate-fade-in-up"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="relative overflow-hidden">
@@ -101,7 +104,7 @@ export default function FeaturedItems() {
         </div>
 
         <div className="text-center">
-          <Link to="/items">
+          <Link to="/projects">
             <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 text-lg group">
               View All Projects
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />

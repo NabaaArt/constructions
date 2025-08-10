@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Award } from "lucide-react"
 import { Link } from "react-router-dom"
- import image1 from "@/assets/construction-team.jpg"
+import image1 from "@/assets/construction-team.jpg"
 
 export default function Hero() {
   const scrollToSection = (sectionId: string) => {
@@ -31,15 +31,18 @@ export default function Hero() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                size="lg"
-                className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 text-lg"
-                onClick={() => scrollToSection("contact")}
-              >
-                Get Free Quote
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+
               <Link to="/items">
+                <Button
+                  size="lg"
+                  className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 text-lg"
+                  onClick={() => scrollToSection("contact")}
+                >
+                  view items
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+              <Link to="/projects">
                 <Button
                   variant="outline"
                   size="lg"
