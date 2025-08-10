@@ -145,7 +145,7 @@ export default function CategoriesPage() {
                       </div>
 
                       <div className="pt-4">
-                        <Link href="/items">
+                        <Link to="/items">
                           <Button className="bg-orange-600 hover:bg-orange-700 text-white group">
                             View {category.title} Projects
                             <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -171,7 +171,7 @@ export default function CategoriesPage() {
                 Get Free Quote
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Link href="/items">
+              <Link to="/items">
                 <Button
                   variant="outline"
                   size="lg"

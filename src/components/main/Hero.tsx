@@ -39,7 +39,7 @@ export default function Hero() {
                 Get Free Quote
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Link href="/items">
+              <Link to="/items">
                 <Button
                   variant="outline"
                   size="lg"

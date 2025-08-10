@@ -101,7 +101,7 @@ export default function FeaturedItems() {
         </div>
 
         <div className="text-center">
-          <Link href="/items">
+          <Link to="/items">
             <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 text-lg group">
               View All Projects
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
